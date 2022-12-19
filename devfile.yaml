@@ -1,0 +1,17 @@
+schemaVersion: 2.1.0
+metadata:
+  name: php-hello-world
+components:
+  - name: tools
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel8:3.5
+      memoryLimit: 1Gi
+commands:
+  - id: run
+    exec:
+      label: "Run the application"
+      component: php
+      workingDir: ${PROJECTS_ROOT}/php-hello-world
+      commandLine: php hello-world.php
+      group:
+        kind: run
