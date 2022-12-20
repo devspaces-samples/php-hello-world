@@ -10,7 +10,7 @@ commands:
   - id: run
     exec:
       label: "Run the application"
-      component: php
+      component: tools
       workingDir: ${PROJECTS_ROOT}/php-hello-world
       commandLine: php hello-world.php
       group:
