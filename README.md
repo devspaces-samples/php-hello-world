@@ -1,3 +1,3 @@
 # php Hello, World!
 
-A hello world PHP script
+A "Hello, World" PHP script
